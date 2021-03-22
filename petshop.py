@@ -1,6 +1,5 @@
 class animal:
 
-
     def __init__(self,nome,raça,anoNascimento,especie):
         self.nome = nome
         self.raça = raça
@@ -19,16 +18,6 @@ class animal:
         Ano de nascimento:{animal.anoNascimento}
                 '''
 
-#if __name__ == '__main__':
-#   a = animal()
-
-#    animais = []
-
-#    animais.append(a.nome)
-#   print(animais)
-
-
-
 class Produto:
     def __init__(self,marca,nome,preço,quantidade,quantidadeGeral):
         self.nome = quantidadeGeral
@@ -37,14 +26,12 @@ class Produto:
         self.preço = preço
         self.quantidade = quantidade
 
-
-    def VTEE(self):
-         #(Valor total em estoque)
+    def VTEE(self): #VTEE=(Valor Total em Estoque)
 
         return Produto.preço * Produto.quantidadeGeral
 
-
     def verDados1(self):
+
         return f'O valor total em estoque: R${Produto.VTEE}'
 
 
@@ -55,15 +42,12 @@ class Funcionario:
         self.nome = nome
         self.função = função
 
-
     def salario(self):
 
         return Funcionario.quantidadeHoras * Funcionario.valorPorHora
 
-        #return f'Salario do Funcionario: {montante}'
-
-
     def verDados2(self):
+
 
         return f'''
         Nome: {Funcionario.nome}
